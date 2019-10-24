@@ -28,7 +28,7 @@ export PATH=$ANDROID_HOME/platform-tools:$PATH
 LATEST_BUILD_TOOLS=$(ls $ANDROID_HOME/build-tools/ | sort -gr | head -1)
 export PATH=$ANDROID_HOME/build-tools/$LATEST_BUILD_TOOLS:$PATH
 
-export JAVA_HOME=/home/druggeri/android-studio/android-studio/jre
+export JAVA_HOME=$HOME/bin/android-studio/jre
 export PATH=$JAVA_HOME/bin:$PATH
 
 alias xclip="xclip -selection clipboard"

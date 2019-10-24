@@ -1,0 +1,48 @@
+[push]
+    default = matching
+[core]
+    autocrlf = input
+    editor = vim
+    trustctime = false
+[diff]
+    tool = kdiff3
+[alias]
+    s = status --short --branch
+    l = log --name-status --decorate --pretty=oneline --abbrev-commit --graph
+    la = log -5 --graph --date=iso --decorate
+    ll = log -5 --abbrev-commit --date=format:'%m/%d %H:%M' --format='format:%C(auto)%h %ad %s'
+    ls = log -5 --oneline
+    ss = stash save
+    sp = stash pop
+    sd = stash drop
+    rh = reset --hard
+    cl = clean -xdf
+    d = diff
+    wipe = !git reset --hard origin/master && git clean -xdf
+    sl = stash list
+    cp = cherry-pick
+    sa = stash apply
+    co = checkout
+    cb = checkout -b
+    ci = commit
+    cam = commit -am
+    b = branch
+    ba = branch --all
+    a = add --all
+    push-master = push origin HEAD:refs/for/master
+    push-changes = "!git push origin HEAD:refs/changes/$1 #"
+    pr = pull --rebase
+[merge]
+    tool = studio
+[mergetool "studio"]
+    cmd = studio merge $LOCAL $REMOTE $BASE $MERGED
+    trustExitCode = true
+    keepbackup = false
+[diff]
+    tool = studio
+[difftool "studio"]
+    cmd = studio diff $LOCAL $REMOTE
+    trustExitCode = true
+    keepbackup = false
+[difftool]
+	prompt = false

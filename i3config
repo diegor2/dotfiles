@@ -138,7 +138,7 @@ mode "$mode_exit" {
 bindsym $mod+Shift+e mode "$mode_exit"
 
 # lock screen
-bindsym $mod+z exec "$HOME/.config/i3/lock"
+bindsym $mod+z exec "i3lock-fancy"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

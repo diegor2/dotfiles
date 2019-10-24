@@ -32,6 +32,7 @@
     push-master = push origin HEAD:refs/for/master
     push-changes = "!git push origin HEAD:refs/changes/$1 #"
     pr = pull --rebase
+    cr = !git co -b `git log --pretty=%s -1 | sed -r 's/([^ ]+):(.*)/\\1\\L\\2/' | sed 's/ /-/g'`
 [merge]
     tool = studio
 [mergetool "studio"]

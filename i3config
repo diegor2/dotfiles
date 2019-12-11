@@ -166,7 +166,7 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym --release Print exec "scrot $HOME/screenshot.png -s -e 'xclip -selection c -t image/png < $f && rm -f $f'"
+bindsym --release Print exec "scrot $HOME/screenshot.png -s -e 'xclip -selection c -t image/png < $f'"
 bindsym --release Shift+Print exec "scrot $HOME/screenshot.png -s"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
@@ -182,10 +182,11 @@ exec i3-msg 'rename workspace number 2 to "2: Chrome"'
 exec i3-msg 'rename workspace number 3 to "3: Android"'
 exec i3-msg 'rename workspace number 4 to "4: Firefox"'
 
-for_window [class="Chromium-browser"] move to workspace number 2
+for_window [class="Google-chrome"] move to workspace number 2
 for_window [title="Google Hangouts$"] move to workspace number 1
 
-for_window [title="Android Studio"] layout stacked
+for_window [title="Android Studio"] move to workspace number 3
+#for_window [title="Android Studio"] layout stacked
 for_window [class="Firefox"] move to workspace number 4
 for_window [class="TelegramDesktop"] move to workspace number 4
 
@@ -194,8 +195,9 @@ workspace 2 output DP-2-3
 workspace 3 output DP-2-3
 workspace 4 output DP-2-3
 
-exec chromium-browser
+exec google-chrome
 #exec telegram
 #exec firefox
 exec studio
+exec pidgin
 

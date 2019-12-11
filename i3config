@@ -184,6 +184,7 @@ exec i3-msg 'rename workspace number 4 to "4: Firefox"'
 
 for_window [class="Google-chrome"] move to workspace number 2
 for_window [title="Google Hangouts$"] move to workspace number 1
+for_window [class="Microsoft Teams - Preview"] move to workspace number 1
 
 for_window [title="Android Studio"] move to workspace number 3
 #for_window [title="Android Studio"] layout stacked
@@ -200,4 +201,4 @@ exec google-chrome
 #exec firefox
 exec studio
 exec pidgin
-
+exec teams

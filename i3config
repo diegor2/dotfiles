@@ -184,12 +184,15 @@ exec i3-msg 'rename workspace number 4 to "4: Firefox"'
 
 for_window [class="Google-chrome"] move to workspace number 2
 for_window [title="Google Hangouts$"] move to workspace number 1
-for_window [class="Microsoft Teams - Preview"] move to workspace number 1
+for_window [class="Microsoft Teams - Preview" window_type="notification"] floating enable
+for_window [class="Microsoft Teams - Preview" window_type="normal"] move to workspace number 1
 
 for_window [title="Android Studio"] move to workspace number 3
 #for_window [title="Android Studio"] layout stacked
 for_window [class="Firefox"] move to workspace number 4
 for_window [class="TelegramDesktop"] move to workspace number 4
+
+for_window [class="Gnome-calculator"] floating enable
 
 workspace 1 output eDP-1
 workspace 2 output DP-2-3

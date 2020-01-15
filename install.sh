@@ -12,4 +12,7 @@ ln -s $PWD/vimrc $HOME/.vimrc
 rm -f $HOME/bin/vysor
 ln -s $PWD/vysor $HOME/bin/vysor
 
+rm -f $HOME/.Xresources
+ln -s $PWD/xresources $HOME/.Xresources
+
 # TODO: [include] gitconfig into .gitconfig

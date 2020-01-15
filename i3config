@@ -194,7 +194,7 @@ for_window [class="TelegramDesktop"] move to workspace number 4
 
 for_window [class="Gnome-calculator"] floating enable
 
-for_window [class="^.*"] border pixel 1
+for_window [class="^.*"] border pixel 0
 
 workspace 1 output eDP-1
 workspace 2 output DP-2-3

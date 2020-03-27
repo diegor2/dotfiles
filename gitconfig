@@ -9,9 +9,9 @@
 [alias]
     s = status --short --branch
     l = log --name-status --decorate --pretty=oneline --abbrev-commit --graph
-    la = log -5 --graph --date=iso --decorate
-    ll = log -5 --abbrev-commit --date=format:'%m/%d %H:%M' --format='format:%C(auto)%h %ad %s'
-    ls = log -5 --oneline
+    la = log --graph --date=iso --decorate
+    ll = log --abbrev-commit --date=format:'%m/%d %H:%M' --format='format:%C(auto)%h %ad %s'
+    ls = log --oneline
     ss = stash save
     sp = stash pop
     sd = stash drop

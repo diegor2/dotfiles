@@ -47,3 +47,9 @@
     keepbackup = false
 [difftool]
 	prompt = false
+[pager]
+	log = true
+    branch = false
+[core]
+    pager = diff-highlight | less --tabs=4 -RFX
+

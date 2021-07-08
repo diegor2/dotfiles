@@ -28,7 +28,10 @@ export PATH=$ANDROID_HOME/platform-tools:$PATH
 LATEST_BUILD_TOOLS=$(ls $ANDROID_HOME/build-tools/ | sort -gr | head -1)
 export PATH=$ANDROID_HOME/build-tools/$LATEST_BUILD_TOOLS:$PATH
 
-export JAVA_HOME=$HOME/bin/android-studio/jre
+export ANDROID_HVPROTO=ddm
+
+#export JAVA_HOME=/usr/lib/jvm/default-java
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/jre
 export PATH=$JAVA_HOME/bin:$PATH
 
 alias xclip="xclip -selection clipboard"
@@ -69,6 +72,9 @@ numlockx on
 
 xrdb -merge ~/.Xresources
 
-export TERMINAL=rxvt-unicode
+export TERMINAL=guake #rxvt-unicode
 
-export PATH=/home/druggeri/Android/Sdk/ndk/21.0.6113669:/home/druggeri/bin/android-studio/jre/bin:/home/druggeri/Android/Sdk/build-tools/29.0.2:/home/druggeri/Android/Sdk/platform-tools:/home/druggeri/Android/Sdk/tools/proguard/bin:/home/druggeri/Android/Sdk/tools/bin:/home/druggeri/Android/Sdk/tools:/home/druggeri/bin:/home/druggeri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+#export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/pulse
+export LD_PRELOAD=$HOME/lib/camlink.so
+
+#export PATH=/home/druggeri/Android/Sdk/ndk/21.0.6113669:/home/druggeri/bin/android-studio/jre/bin:/home/druggeri/Android/Sdk/build-tools/29.0.2:/home/druggeri/Android/Sdk/platform-tools:/home/druggeri/Android/Sdk/tools/proguard/bin:/home/druggeri/Android/Sdk/tools/bin:/home/druggeri/Android/Sdk/tools:/home/druggeri/bin:/home/druggeri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin

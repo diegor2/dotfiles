@@ -12,6 +12,7 @@
     la = log --graph --date=iso --decorate
     ll = log --abbrev-commit --date=format:'%m/%d %H:%M' --format='format:%C(auto)%h %ad %s'
     ls = log --oneline
+    lp = log --pretty=%s 
     ss = stash save
     sp = stash pop
     sd = stash drop
@@ -32,7 +33,8 @@
     push-master = push origin HEAD:refs/for/master
     push-changes = "!git push origin HEAD:refs/changes/$1 #"
     pr = pull --rebase
-    cr = !git co -b `git log --pretty=%s -1 | sed -r 's/([^ ]+)(.*)/\\1\\L\\2/' | sed 's/\\W\\+/-/g'`
+    cr = "!git co -b `git log --pretty=%s -1 | sed -r 's/([^ ]+)(.*)/\\1\\L\\2/' | sed 's/\\W\\+/-/g'`-$1 #"
+    head = symbolic-ref --short HEAD
 [merge]
     tool = studio
 [mergetool "studio"]

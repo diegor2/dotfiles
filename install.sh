@@ -1,7 +1,7 @@
 #! /usr/bin/env sh
 
 rm -f $HOME/.profile
-ln -s $PWD/dot_profile $HOME/.profile
+ln -s $PWD/profile $HOME/.profile
 
 rm -f $HOME/.config/i3/config
 ln -s $PWD/i3config $HOME/.config/i3/config

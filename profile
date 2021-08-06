@@ -77,7 +77,7 @@ xrdb -merge ~/.Xresources
 export TERMINAL=guake #rxvt-unicode
 
 #export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/pulse
-export LD_PRELOAD=$HOME/lib/camlink.so
+export LD_PRELOAD=/usr/local/lib/camlink/camlink.so
 
 #export PATH=/home/druggeri/Android/Sdk/ndk/21.0.6113669:/home/druggeri/bin/android-studio/jre/bin:/home/druggeri/Android/Sdk/build-tools/29.0.2:/home/druggeri/Android/Sdk/platform-tools:/home/druggeri/Android/Sdk/tools/proguard/bin:/home/druggeri/Android/Sdk/tools/bin:/home/druggeri/Android/Sdk/tools:/home/druggeri/bin:/home/druggeri/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 

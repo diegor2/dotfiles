@@ -1,4 +1,4 @@
-#! /usr/bin/env sh
+#!/usr/bin/env sh
 
 rm -f $HOME/.profile
 ln -s $PWD/profile $HOME/.profile
@@ -15,4 +15,5 @@ ln -s $PWD/vysor $HOME/bin/vysor
 rm -f $HOME/.Xresources
 ln -s $PWD/xresources $HOME/.Xresources
 
-# TODO: [include] gitconfig into .gitconfig
+# [include] gitconfig into .gitconfig
+printf "[include]\npath = $PWD/gitconfig\n" >> $HOME/.gitconfig
